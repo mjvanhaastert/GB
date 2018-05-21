@@ -154,8 +154,9 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "INSERT INTO wiki (toolsId, toolsTitle, toolsAbstract, toolsThumbnail)
-VALUES ('$toolsId', '$toolsTitle'), '$toolsAbstract','$toolsThumbnail')";
+$sql = "INSERT INTO wiki (toolsId,  
+toolsTitle, toolsAbstract, toolsThumbnail)
+VALUES ('$toolsId', '$toolsTitle', '$toolsAbstract','$toolsThumbnail')";
 
 $sql = "INSERT INTO wiki (toolsId, toolsTitle, toolsAbstract, toolsThumbnail)
 VALUES ('$toolsId', '$toolsTitle' , '$toolsAbstract','$toolsThumbnail')";
